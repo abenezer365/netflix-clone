@@ -82,6 +82,7 @@ function Movie({ title, fetchUrl }) {
               onClick={() => handleVideo(movie.title || movie.original_title)}
               src={`https://image.tmdb.org/t/p/original${movie.poster_path}`}
               alt="poster"
+              loading="lazy"
             />
             <div className="title">{movie.title || movie.original_title}</div>
           </div>
